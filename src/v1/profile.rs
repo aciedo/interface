@@ -1,4 +1,5 @@
-use rkyv::{Archive, Deserialize, Serialize, CheckBytes};
+use rkyv::{Archive, Deserialize, Serialize};
+use bytecheck::CheckBytes;
 #[cfg(feature = "scylla")]
 use scylla::{FromRow, ValueList};
 use uuid::Uuid;

@@ -1,5 +1,6 @@
-use rkyv::{Deserialize, Archive, Serialize, CheckBytes};
+use rkyv::{Deserialize, Archive, Serialize};
 use uuid::Uuid;
+use bytecheck::CheckBytes;
 use webauthn_proto::{CreationChallengeResponse, RegisterPublicKeyCredential, RequestChallengeResponse, PublicKeyCredential};
 
 #[derive(Archive, Deserialize, Serialize, Debug, Clone)]
